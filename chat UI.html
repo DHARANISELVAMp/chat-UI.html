@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+
+<div class="w-full max-w-md bg-white rounded-xl shadow-xl overflow-hidden">
+
+  <!-- Header -->
+  <div class="bg-indigo-600 text-white p-4 flex items-center space-x-3">
+    <div class="w-10 h-10 rounded-full bg-white text-indigo-600 flex items-center justify-center font-bold">
+      J
+    </div>
+    <div>
+      <h4 class="font-semibold">John</h4>
+      <p class="text-xs opacity-80">Online</p>
+    </div>
+  </div>
+
+  <!-- Messages -->
+  <div class="p-4 h-96 overflow-y-auto bg-gray-50 space-y-4">
+    <div class="flex justify-start">
+      <div class="bg-gray-300 p-3 rounded-lg max-w-xs">
+        Hi! Are you working on the UI?
+      </div>
+    </div>
+
+    <div class="flex justify-end">
+      <div class="bg-indigo-600 text-white p-3 rounded-lg max-w-xs">
+        Yes! SaaS page is completed 😊
+      </div>
+    </div>
+
+    <div class="flex justify-start">
+      <div class="bg-gray-300 p-3 rounded-lg max-w-xs">
+        Great! Send it over 🚀
+      </div>
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="p-4 border-t flex space-x-2">
+    <input
+      type="text"
+      placeholder="Type a message..."
+      class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    >
+    <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
+      Send
+    </button>
+  </div>
+
+</div>
+
+</body>
+</html>
